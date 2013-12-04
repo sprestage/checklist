@@ -24,3 +24,7 @@ Credits
 This starts with the RailsCast #136 sample application and walks me through jQuery and Ajax changes to improve
 the application.  I really like having this app around as I find it personally useful as well as a good exercise.
 
+
+Critical Failures
+=======
+Tests currently fail
