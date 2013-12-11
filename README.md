@@ -5,6 +5,9 @@ Start with a simple task list application where users can create tasks, mark the
 remove them.  Each of these actions requires the page to be fully reloaded.  The goal is to add
 AJAX so that this can be done without a page reload.
 
+[![Code Climate](https://codeclimate.com/github/sprestage/checklist.png)](https://codeclimate.com/github/sprestage/checklist)
+
+
 Setup
 =======
 
