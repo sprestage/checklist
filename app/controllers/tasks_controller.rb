@@ -10,7 +10,7 @@ class TasksController < ApplicationController
   end
 
   def create
-    @task = Task.create!(params[:task])
+    @task = Task.create!(task_params)
     respond_to do |format|
       format.html { redirect_to tasks_url }
       format.js
@@ -19,7 +19,7 @@ class TasksController < ApplicationController
 
   def update
     @task = Task.find(params[:id])
-    @task.update_attributes!(params[:task])
+    @task.update_attributes!(task_params)
     respond_to do |format|
       format.html { redirect_to tasks_url }
       format.js
@@ -32,5 +32,9 @@ class TasksController < ApplicationController
       format.html { redirect_to tasks_url }
       format.js
     end
+  end
+
+  def task_params
+    params.require(:task).permit(:complete, :name)
   end
 end

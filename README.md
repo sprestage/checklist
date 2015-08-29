@@ -19,7 +19,7 @@ rake db:setup
 rails s
 ```
 
-Requires Ruby 1.9.2 or later to run.
+Uses Rails 4.2.4.
 
 Credits
 =======
@@ -28,6 +28,6 @@ This starts with the RailsCast #136 sample application and walks me through jQue
 the application.  I really like having this app around as I find it personally useful as well as a good exercise.
 
 
-Critical Failures
+Non-Critical Failures
 =======
-Tests currently fail
+Tests all run, but with some errors and failures.

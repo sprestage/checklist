@@ -1,38 +1,37 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.17'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'rails', '4.0'
 
 gem 'sqlite3'
 
+# Use SCSS for stylesheets
+gem 'sass-rails'
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
+# Use CoffeeScript for .js.coffee assets and views
+gem 'coffee-rails'
 
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier'
 
-  gem 'uglifier'
-end
-
+# Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'minitest-rails'
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
+group :development, :test do
+# More minitest
+  gem 'minitest'
+  gem 'minitest-focus'
+  gem 'minitest-reporters'
+# Capybara
+  gem 'minitest-rails-capybara'
+  gem 'launchy'
+# pry inline debugger
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-doc'
+# Faker for generating /test/fixture/foo.yml data
+  gem 'faker'
+# Figaro for removing secret keys from github
+  gem 'figaro'
+end
