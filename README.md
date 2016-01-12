@@ -1,6 +1,7 @@
 [![Code Climate](https://codeclimate.com/github/sprestage/checklist.png)](https://codeclimate.com/github/sprestage/checklist)
-[![Dependency Status](https://gemnasium.com/sprestage/checklist.svg)](https://gemnasium.com/sprestage/checklist)
 
+### January 12, 2016
+I am sunsetting this project as it does not hold much interest to me at this time, other than for useful archival purposes.  Removing the Gemnasium badge.  -sprestage
 
 Checklist
 =======
